@@ -15,7 +15,6 @@ const config = {
     },
     module: {
         rules: [
-           
             { 
                 test: /\.(png|jpg)$/i,
                 type: 'asset/resource',
