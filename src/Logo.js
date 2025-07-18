@@ -1,6 +1,6 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, time, doTween} from './index.js'
+import { Easing } from '@tweenjs/tween.js'
+import { getAsset, time, doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 import Button from './Button.js'
 

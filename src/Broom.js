@@ -3,7 +3,7 @@ import { Easing } from '@tweenjs/tween.js'
 import { doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 
-export default class NotCake extends PIXI.Container{
+export default class Broom extends PIXI.Container {
     #sprite
     #scaleContainer = new PIXI.Container()
     /**

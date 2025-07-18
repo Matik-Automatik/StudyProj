@@ -1,8 +1,6 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, time, doTween} from './index.js'
+import { getAsset } from './index.js'
 import * as PIXI from 'pixi.js'
-import rightCount from './Scene.js'
 
 export default class Ui extends PIXI.Container {
     #scaleContainer = new PIXI.Container()
@@ -14,7 +12,7 @@ export default class Ui extends PIXI.Container {
         fontStyle: "italic",
         lineJoin: "round",
         miterLimit: 2,
-        padding: 20,
+        padding: 10,
         strokeThickness: 2
     })
     
@@ -24,20 +22,15 @@ export default class Ui extends PIXI.Container {
         this.addChild(this.#scaleContainer)
         this.#scaleContainer.addChild(this.#sprite, this.#counter)
         
-        this.#sprite.scale.set(0.2)
+        this.#sprite.scale.set(0.4)
         this.#sprite.anchor.set(1)
 
         this.#counter.scale.set(0.6)
         this.#counter.anchor.set(0.5)
-        this.#counter.position.set(-100, -45) 
+        this.#counter.position.set(-105, -45) 
     }
 
-    start() {
-    
-                
-    }
-
-     updatetext(count) {
+    updatetext(count) {
         this.#counter.text = `${count} / 3`
     }
 }

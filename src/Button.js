@@ -1,8 +1,7 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
+import { Easing } from '@tweenjs/tween.js'
 import {getAsset, time, doTween} from './index.js'
 import * as PIXI from 'pixi.js'
-
 
 export default class Button extends PIXI.Container {
     #sprite = new PIXI.Sprite(getAsset('button_en'))

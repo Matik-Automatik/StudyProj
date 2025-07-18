@@ -1,6 +1,6 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, time, doTween} from './index.js'
+import { Easing } from '@tweenjs/tween.js'
+import { getAsset, time, doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 
 
@@ -14,7 +14,7 @@ export default class RightMark extends PIXI.Container {
         this.addChild(this.#scaleContainer)
         this.#scaleContainer.addChild(this.#sprite)
 
-        this.#sprite.scale.set(0.07)
+        this.#sprite.scale.set(0.35)
         this.#sprite.anchor.set(0.5)
         this.#sprite.visible = false       
     }

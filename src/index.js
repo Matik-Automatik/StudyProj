@@ -57,7 +57,6 @@ function main() {
     app.stage.addChild(scene)
     app.ticker.add(update)
     app.start()
-    scene.start()
     
     const doResize = (width, height) => {
         scene.resize(width, height)

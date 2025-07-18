@@ -1,6 +1,5 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, doTween} from './index.js'
+import { doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 
 export default class Cupcake extends PIXI.Container{
@@ -16,13 +15,12 @@ export default class Cupcake extends PIXI.Container{
         this.addChild(this.#scaleContainer)
         this.#scaleContainer.addChild(this.#sprite)
         this.#sprite.anchor.set(0.5, 0.65)
-        this.#sprite.scale.set(0.09)
+        this.#sprite.scale.set(0.45)
         this.interactive = true
         
         doTween(this.#scaleContainer) 
             .to({angle: [5, 0, -5, 0]}, 1200)
             .repeat(Infinity)
-            .start() 
-           
+            .start()    
     }
 } 

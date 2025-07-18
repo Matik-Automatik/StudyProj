@@ -1,6 +1,5 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, doTween} from './index.js'
+import { doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 
 export default class Kettle extends PIXI.Container{

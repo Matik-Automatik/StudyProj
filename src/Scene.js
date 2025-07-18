@@ -144,10 +144,6 @@ export default class Scene extends PIXI.Container {
         this.on('pointerdown', () => { this.#ui.updatetext(this.rightCount) })
     }
 
-    start() {
-        this.#ui.start()
-    }
-
     /**
      * 
      * @param {PIXI.InteractionEvent} event

@@ -1,9 +1,9 @@
 //@ts-check
-import { Easing, Tween } from '@tweenjs/tween.js'
-import {getAsset, doTween} from './index.js'
+import { Easing } from '@tweenjs/tween.js'
+import { doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 
-export default class NotCake extends PIXI.Container{
+export default class NotCake extends PIXI.Container {
     #sprite
     #scaleContainer = new PIXI.Container()
     /**

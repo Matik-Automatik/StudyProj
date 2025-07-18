@@ -1,8 +1,7 @@
 //@ts-check
 import { Easing, Tween } from '@tweenjs/tween.js'
-import {time, doTween, getAsset} from './index.js'
+import { time, doTween, getAsset } from './index.js'
 import * as PIXI from 'pixi.js'
-
 
 export default class WrongMark extends PIXI.Container {
     #sprite = new PIXI.Sprite(getAsset('wrong_sprite'))
@@ -20,7 +19,7 @@ export default class WrongMark extends PIXI.Container {
         this.addChild(this.#scaleContainer)
         this.#scaleContainer.addChild(this.#sprite)
 
-        this.#sprite.scale.set(0.07)
+        this.#sprite.scale.set(0.35)
         this.#sprite.anchor.set(0.5)
         this.#sprite.visible = false
     }
