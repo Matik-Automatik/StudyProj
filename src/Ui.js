@@ -30,7 +30,6 @@ export default class Ui extends PIXI.Container {
         this.#counter.scale.set(0.6)
         this.#counter.anchor.set(0.5)
         this.#counter.position.set(-100, -45) 
-        // console.log('counter', this.#counter)
     }
 
     start() {

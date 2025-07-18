@@ -61,7 +61,6 @@ function main() {
     
     const doResize = (width, height) => {
         scene.resize(width, height)
-        // console.log(width, "ширина", height, 'высота');
         app.renderer.resize(width, height)   
     }
     

@@ -12,7 +12,6 @@ export default class Character extends PIXI.Container {
 
     constructor() {
         super()
-        console.log(this.#sprite.height);
         
         this.addChild(this.#scaleContainer)
         this.#scaleContainer.addChild(
