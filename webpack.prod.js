@@ -5,9 +5,9 @@ const config = {
     entry: './src/index.js',
     mode: 'production',
     output: {
-        filename: 'bundle.[contenthash].js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'images/[contenthash][ext]', // сохранять изображения в папку images
+        assetModuleFilename: '[name][ext]', // сохранять изображения в папку images
         clean: true, 
     },
     resolve: {

@@ -4,6 +4,10 @@ const path = require("path")
 const config = {
     entry: './src/index.js',
     mode: 'development',
+    output: {
+        filename: 'bundle.[contenthash].js',
+        assetModuleFilename: 'images/[contenthash][ext]',
+    },
     resolve: {
         extensions: ['.js'],
     },
