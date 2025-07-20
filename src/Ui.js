@@ -7,12 +7,13 @@ export default class Ui extends PIXI.Container {
     #counter = new PIXI.Text('0 / 3', {
         fill: "#ffffff",
         fontFamily: "Impact, Charcoal, sans-serif",
-        fontSize: 33,
+        fontSize: 44,
         fontStyle: "italic",
         lineJoin: "round",
         miterLimit: 2,
         padding: 10,
-        strokeThickness: 2
+        strokeThickness: 5,
+        stroke: 0x303030
     })
     
     constructor() {
@@ -23,7 +24,8 @@ export default class Ui extends PIXI.Container {
         
         this.#sprite.scale.set(0.4)
         this.#sprite.anchor.set(1)
-
+       
+        this.#counter.scale.set(0.75)
         this.#counter.anchor.set(0.5)
         this.#counter.position.set(-105, -45) 
     }

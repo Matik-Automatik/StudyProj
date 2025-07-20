@@ -189,5 +189,7 @@ export default class Scene extends PIXI.Container {
         const sx = width / this.#back.width
         const sy = height / this.#back.height
         this.scale.set(Math.min(sx, sy))
+        console.log(this.scale.x);
+        
     }    
 }

@@ -12,7 +12,6 @@ const app = new PIXI.Application({
     antialias: true,
     resolution: window.devicePixelRatio || 1 
 })
-
 document.body.append(canvas)
 
 const time = { currTime: 0 }
