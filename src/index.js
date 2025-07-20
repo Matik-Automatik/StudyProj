@@ -7,7 +7,11 @@ import { loadAssets } from './assets.js'
 const canvas = document.createElement('canvas')
 canvas.width = 1
 canvas.height = 1
-const app = new PIXI.Application({ view: canvas, antialias: true })
+const app = new PIXI.Application({ 
+    view: canvas,
+    antialias: true,
+    resolution: window.devicePixelRatio || 1 
+})
 
 document.body.append(canvas)
 
