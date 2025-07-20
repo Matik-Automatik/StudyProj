@@ -3,7 +3,7 @@ import * as PIXI from 'pixi.js'
 import WrongMark from './WrongMark.js'
 import RightMark from './RightMark.js'
 import NotCake from './NotCake.js'
-import { getAsset, doTween } from './index.js'
+import { doTween } from './index.js'
 import Broom from './Broom.js'
 import Kettle from './Kettle.js'
 import Cupcake from './Cupcake.js'
@@ -11,6 +11,7 @@ import Logo from './Logo.js'
 import Character from './Character.js'
 import { Easing } from '@tweenjs/tween.js'
 import Ui from './Ui.js'
+import { getAsset } from './assets.js'
 
 export default class Scene extends PIXI.Container {
     #back = new PIXI.Sprite(getAsset('back'))
@@ -152,7 +153,6 @@ export default class Scene extends PIXI.Container {
         const localPos = this.#mainContainerWrong.toLocal(event.data.global)
         this.#wrongMark.position.copyFrom(localPos)
         this.#wrongMark.show()
-        console.log(localPos);   
     }
 
     /**
@@ -167,7 +167,7 @@ export default class Scene extends PIXI.Container {
         this.#mainContainerRight.addChild(RightPointer)
         RightPointer.show()
         
-        console.log(this.#mainContainerWrong.toLocal(event.data.global))
+
         this.rightCount++ 
         
         if (this.rightCount == 3) {

@@ -1,7 +1,6 @@
 //@ts-check
-import { getAsset } from './index.js'
 import * as PIXI from 'pixi.js'
-
+import { getAsset } from './assets.js'
 export default class Ui extends PIXI.Container {
     #scaleContainer = new PIXI.Container()
     #sprite = new PIXI.Sprite(getAsset('cake_ui'))

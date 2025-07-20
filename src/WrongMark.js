@@ -1,8 +1,8 @@
 //@ts-check
 import { Easing, Tween } from '@tweenjs/tween.js'
-import { time, doTween, getAsset } from './index.js'
+import { time, doTween } from './index.js'
 import * as PIXI from 'pixi.js'
-
+import { getAsset } from './assets.js'
 export default class WrongMark extends PIXI.Container {
     #sprite = new PIXI.Sprite(getAsset('wrong_sprite'))
     #scaleContainer = new PIXI.Container()

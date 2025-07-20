@@ -1,8 +1,8 @@
 //@ts-check
 import { Easing } from '@tweenjs/tween.js'
-import {getAsset, time, doTween} from './index.js'
+import { time, doTween} from './index.js'
 import * as PIXI from 'pixi.js'
-
+import { getAsset } from './assets.js'
 export default class Bubble extends PIXI.Container {
     #sprite = new PIXI.Sprite(getAsset('bubble_en'))
     #scaleContainer = new PIXI.Container()

@@ -1,9 +1,9 @@
 //@ts-check
 import { Easing } from '@tweenjs/tween.js'
-import { getAsset, time, doTween } from './index.js'
+import { time, doTween } from './index.js'
 import * as PIXI from 'pixi.js'
 import Bubble from './Bubble.js'
-
+import { getAsset } from './assets.js'
 export default class Character extends PIXI.Container {
     #sprite = new PIXI.Sprite(getAsset('character'))
     #bubble = new Bubble()
