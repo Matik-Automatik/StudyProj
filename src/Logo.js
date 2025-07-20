@@ -23,7 +23,7 @@ export default class Logo extends PIXI.Container {
         this.#buttonEnd.scale.set(0.5)
         this.#buttonEnd.visible = false
         this.#buttonEnd.position.set(this.#sprite.x, ++this.#sprite.height)
-        this.#buttonEnd.on('pointerdown', () => {this.onPointerDown()})
+        this.#buttonEnd.on('pointertap', () => {this.onPointerDown()})
     }
 
     show() {
@@ -42,8 +42,8 @@ export default class Logo extends PIXI.Container {
     }
     
     onPointerDown() {
-        window.open('https://lesta.ru/shop/wot/main')
-        
+        // window.open('https://lesta.ru/shop/wot/main', '_blank')
+        alert('Store')
     }
 
 }
